@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Index</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<header>
+    <ul>
+        <li><a href="test1">Home</a></li>
+        <li><a href="test2">News</a></li>
+        <li><a href="test3">Contact</a></li>
+        <li><a href="test4">About</a></li>
+    </ul>
+</header>
+
 <body class="basic">
-    <div class = header>
-    <h1 class="header_flex">My goals</h1>
-    <img class="header_flex" src="/images/testPicture.jpg" alt="here is an image" class="image">
+    <div class = "start">
+    <h1 class="names">My goals</h1>
+    <form class="goalInput" action="test">
+        <label for="goal">Goal:</label>
+        <input type="text" id="goal" name="goal" required><br>
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required><br>
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority" required><br>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br>
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
     <p>Test.</p>
     <p>Test.</p>
     <p>Test.</p>

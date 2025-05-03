@@ -1,9 +1,80 @@
-* header {
-  display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+header{
+  background-color: #2F3C7E;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
 }
-* header_flex {
-    justify-content: space-between;
-    flex-direction: row;
+header ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+header li{
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style: none;
+  font-size: 20px;
+}
+
+header li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+header li a:hover{
+  color: #2F3C7E;
+  background-color: #FBEAEB;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #FBEAEB;
+  margin: 0;
+  padding: 20px;
+}
+
+.names{
+  font-family: Arial, sans-serif;
+  font-size: 35x;
+  text-align: center  ;
+  color: #2F3C7E;
+  margin: 20px;
+  padding: 0;
+}
+
+
+.goalInput{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 1px solid #2F3C7E;
+  width: calc(100% - 40px);
+}
+.goalInput input, select, textarea{
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #2F3C7E;
+  font-size: 20px;
+
+}
+.goalInput:focus{
+  outline: none;
+  border-color: #2F3C7E;
+  box-shadow: 0 0 5px rgba(47, 60, 126, 0.5);
 }
